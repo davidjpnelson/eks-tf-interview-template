@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars and update with your actual values
+
+project_id    = "pp-development-466213"
+region        = "us-central1"
+zone          = "us-central1-a"
+cluster_name  = "gke-cluster"
+machine_type  = "e2-medium"
+node_count    = 3
+environment   = "dev" 
