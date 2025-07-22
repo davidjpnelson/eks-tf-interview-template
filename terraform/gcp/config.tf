@@ -2,10 +2,9 @@
 terraform {
   required_version = "~> 1.12"
   # Backend configuration - you can switch to GCS if preferred
-  backend "s3" {
-    bucket = "meyerkev-terraform-state"
-    key = "gcp-interview.tfstate"
-    region = "us-east-2"
+  backend "gcs" {
+    bucket = "gcp-interviews-meyerkev-terraform-state"
+    prefix = "terraform/state"
   }
 
   required_providers {

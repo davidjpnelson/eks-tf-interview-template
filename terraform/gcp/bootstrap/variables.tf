@@ -1,6 +1,7 @@
 variable "project_id" {
   description = "The GCP project ID"
   type        = string
+  default     = "gcp-interviews-meyerkev"
 }
 
 variable "region" {
@@ -12,6 +13,7 @@ variable "region" {
 variable "terraform_state_bucket_name" {
   description = "Name of the GCS bucket for Terraform state (must be globally unique)"
   type        = string
+  default     = "gcp-interviews-meyerkev-terraform-state"
 }
 
 variable "environment" {
